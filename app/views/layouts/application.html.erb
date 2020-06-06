@@ -7,9 +7,12 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   </head>
 
   <body>
+  <%= render 'layouts/navbar'%>
+  <div class='spacer'></div>
     <%= yield %>
   </body>
 </html>

@@ -1,26 +1,30 @@
-<h2>Log in</h2>
-
+<h2 class='logintext'>Login</h2>
+<div class='screen'></div>
+<div class='screenback'></div>
+<div class='screenleft'></div>
+<div class='screenbottom'></div>
+<div class='screenright'></div>
+<div class='bluetop'></div>
+<div class='rightpannel'></div>
+<div class='leftpannel'></div>
+<div class='bluetrap'></div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'email', class: 'field1' %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'password', class: 'field2' %>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="rememberfield">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class:'logbutton' %>
   </div>
 <% end %>
-
+<div class='signuplogin'>
 <%= render "devise/shared/links" %>
+</div>
+
