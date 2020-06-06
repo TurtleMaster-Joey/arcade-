@@ -21,6 +21,7 @@
 
 body{
    font-family: pacifico;
+   text-align: center;
 }
 
  .navbar{
@@ -30,6 +31,7 @@ body{
     left: 0px;
     top: 0px;
     background: #02BDF0;
+    z-index: -2;
  }
 
  .navtitle{
@@ -64,7 +66,7 @@ body{
 
  .one{
     position: absolute;
-    left: 75.49%;
+    left: 38.49%;
     right: 16.46%;
     top: 26.67%;
     bottom: 40.95%;
@@ -72,10 +74,26 @@ body{
 
  .two{
     position: absolute;
-    left: 92.15%;
+    left: 65.15%;
     right: 1.04%;
     top: 26.67%;
     bottom: 44.76%;
+ }
+
+ .three{
+   position: absolute;
+    left: 44.15%;
+    right: 1.04%;
+    top: 26.67%;
+    bottom: 44.76%;
+ }
+
+ .four{
+   position: absolute;
+   left: 87.15%;
+   right: 1.04%;
+   top: 26.67%;
+   bottom: 44.76%;
  }
 
  .spacer{
@@ -85,7 +103,59 @@ body{
 
  input::placeholder{
     font-family: pacifico;
+    font-size: 30px;
  }
+
+ input{
+   width: 200px;
+   height: 40px;
+ }
+
+ .oneback{
+   position: absolute;
+   width: 102px;
+   height: 42px;
+   left: 780px;
+   top: 37px;
+   z-index: -1;
+   background: #565251;
+   border-radius: 20px;
+ }
+
+ .twoback{
+   position: absolute;
+   width: 102px;
+   height: 42px;
+   left: 925px;
+   top: 37px;
+   z-index: -1;
+   background: #565251;
+   border-radius: 20px;
+}
+
+.threeback{
+   position: absolute;
+   width: 142px;
+   height: 42px;
+   left: 1045px;
+   top: 37px;
+   z-index: -1;
+   background: #565251;
+   border-radius: 20px;
+}
+
+.fourback{
+   position: absolute;
+   width: 128px;
+   height: 42px;
+   left: 1200px;
+   top: 37px;
+   z-index: -1;
+   background: #565251;
+   border-radius: 20px;
+}
+
+
 
 
 

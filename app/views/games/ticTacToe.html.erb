@@ -1,2 +1,61 @@
-<h1>Games#ticTacToe</h1>
-<p>Find me in app/views/games/ticTacToe.html.erb</p>
+
+<h1>Tic Tac Toe</h1>
+<h1 id='userInfo'></h1>
+<div id="application"></div>
+
+<script>
+let state = {
+    userTurn: "X",
+    board: [
+      ["-", "-", "-"],
+      ["-", "-", "-"],
+      ["-", "-", "-"]
+    ]
+  };
+  
+  function handleClick(element) {
+    // const row = element.dataset.row
+    // const column = element.dataset.column
+    const { row, column } = element.dataset;
+    const { board, userTurn } = state;
+    //check to see if piece has been played
+    if (state.board[row][column] !== "-") {
+      return;
+    }
+    // have changed board in state
+    state.board[row][column] = state.userTurn;
+    // want to change userTurn
+    state.userTurn = state.userTurn === "X" ? "O" : "X";
+    render();
+  }
+  
+  function reset(){
+    let state = {
+      userTurn: 'X',
+      board: [
+          ['-','-','-'],
+          ['-','-','-'],
+          ['-','-','-'],
+      ]
+  };
+    render();
+  }
+  
+  function render() {
+    let boardStr = "";
+    const { board } = state;
+    board.forEach((row, rowIndex) => {
+      row.forEach((item, columnIndex) => {
+        boardStr += `
+                      <div class="box" onclick={handleClick(this)} data-row=${rowIndex} data-column=${columnIndex}> 
+                          ${item}
+                      </div>
+                  `;
+      });
+    });
+    document.getElementById("app").innerHTML = boardStr;
+    document.getElementById("userInfo").innerHTML = `${state.userTurn}'s turn`;
+  }
+
+  render();
+  </script>

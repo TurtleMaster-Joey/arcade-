@@ -1,7 +1,13 @@
 <div class ='navbar'>
     <h1 class="navtitle">ProArcade</h1>
     <ul class= 'navlist'>
-        <%= link_to 'sign up', nil, class:'nav-item one' %>
-        <%= link_to 'log in', nil, class: 'nav-item two'%>
+        <%= link_to 'games', nil, class:'nav-item one' %>
+        <%= link_to 'highscores', nil, class: 'nav-item two'%>
+        <%= link_to 'profile', nil, class: 'nav-item three'%>
+        <%= link_to 'sign out', destroy_user_session_path, method: :delete, class: 'nav-item four'%>
     </ul>
+    <div class='oneback'></div>
+    <div class='twoback'></div>
+    <div class='threeback'></div>
+    <div class='fourback'></div>
 </div>
