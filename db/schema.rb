@@ -10,17 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2020_06_06_175651) do
+=======
 ActiveRecord::Schema.define(version: 2020_06_06_163153) do
+>>>>>>> a4070da87c127d80863441d53071bcd6ad658bb5
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "accounts", force: :cascade do |t|
-    t.string "name"
-    t.bigint "user_id", null: false
+    t.string "gamertag"
+    t.string "hometown"
+    t.string "favorite_food"
+    t.string "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_accounts_on_user_id"
+    t.string "user_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -46,11 +52,16 @@ ActiveRecord::Schema.define(version: 2020_06_06_163153) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+<<<<<<< HEAD
+=======
   add_foreign_key "accounts", "users"
   add_foreign_key "games", "accounts"
   add_foreign_key "scores", "games"
+>>>>>>> a4070da87c127d80863441d53071bcd6ad658bb5
 end
