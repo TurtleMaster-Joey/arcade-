@@ -83,3 +83,9 @@ body{
      widht: 100px;
  }
 
+ input::placeholder{
+    font-family: pacifico;
+ }
+
+
+
