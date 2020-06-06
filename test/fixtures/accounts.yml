@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  user: one
+  gamertag: MyString
+  hometown: MyString
+  favorite_food: MyString
+  bio: MyString
 
 two:
-  name: MyString
-  user: two
+  gamertag: MyString
+  hometown: MyString
+  favorite_food: MyString
+  bio: MyString

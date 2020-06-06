@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'accounts/index'
+  get 'accounts/show'
+  get 'accounts/new'
+  get 'accounts/edit'
   root "accounts#index"
   devise_for :users
 
