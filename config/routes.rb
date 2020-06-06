@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'scores/index'
   get 'games/index'
   get 'games/show'
   root "accounts#index"
