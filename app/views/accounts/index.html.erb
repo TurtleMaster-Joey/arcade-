@@ -4,10 +4,12 @@
 <h2>Your Accounts</h2>
 
 <ul>
-  <%= @accounts.each do |account| %>
+  <% @accounts.each do |account| %>
     <li>
       <%= account.gamertag %> <br />
-      <%= link_to "Edit Account", edit_account_path(current_user.id) %>
+      <%= link_to "Play!", games_path(account) %>
+      <%= link_to "Show Account Info", account_path(account) %>
+      <%= link_to "Edit Account", edit_account_path(account) %>
       <%= link_to "Delete Account", account, method: :delete %>
     </li>
   <% end %>

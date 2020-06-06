@@ -40,7 +40,7 @@ class AccountsController < ApplicationController
   
     private
       def account_params
-        params.require(:account).permit(:name, :balance)
+        params.require(:account).permit(:gamertag, :hometown, :favorite_food, :bio)
       end
       
       def set_account
