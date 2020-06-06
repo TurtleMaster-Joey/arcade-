@@ -1,4 +1,13 @@
 class GamesController < ApplicationController
+
+  def coinToss
+  end
+  
+  def ticTacToe
+  end
+
+  def rockPaperScissors
+  end
   
   def index
     @games = Game.all
@@ -16,3 +25,4 @@ end
 
 
 end
+
