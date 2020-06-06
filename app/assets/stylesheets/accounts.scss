@@ -215,7 +215,7 @@
     position: absolute;
     width: 186px;
     height: 61px;
-    left: 183px;
+    left: 143px;
     top: 311px;
     font-family: Pacifico;
     font-style: normal;
@@ -302,3 +302,33 @@
     border-radius: 96px;
     z-index: -2;
   }
+
+.profileimg{
+  position: absolute;
+  width: 333px;
+  height: 327px;
+  left: 988px;
+  top: 146px;
+  background: url(profile.jpg);
+  border-radius: 30px;
+  background-position: center;
+  background-size: contain;
+}
+
+.lgbtn{
+  position: absolute;
+  width: 186px;
+  height: 56px;
+  left: 1071px;
+  top: 539px;
+  background: #02BDF0;
+  border-radius: 20px;
+}
+
+li{
+  list-style: none;
+}
+
+.gametag{
+  font-size: 50px;
+}
