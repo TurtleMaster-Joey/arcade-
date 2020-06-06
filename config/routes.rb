@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 388b337b1499d845c2272b294a8ddd53d20ee88b
   root "accounts#index"
   devise_for :users
 

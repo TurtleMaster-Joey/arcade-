@@ -2,45 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+//Login page css
 .logintext{
-
-position: absolute;
-width: 78px;
-height: 70px;
-left: 670px;
-top: 266px;
-
-font-family: Pacifico;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 70px;
-letter-spacing: -0.333333px;
-
-color: #000000;
+    position: absolute;
+    width: 78px;
+    height: 70px;
+    left: 670px;
+    top: 266px;
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: -0.333333px;
+    color: #000000;
 }
 
 .field1{
     position: absolute;
-width: 246px;
-height: 40px;
-left: 597px;
-top: 382px;
-background: #FFFFFF;
-border: 1px solid #565251;
-box-sizing: border-box;
+    width: 246px;
+    height: 40px;
+    left: 597px;
+    top: 382px;
+    background: #FFFFFF;
+    border: 1px solid #565251;
+    box-sizing: border-box;
 }
 
 .field2{
     position: absolute;
-width: 246px;
-height: 40px;
-left: 597px;
-top: 460px;
-
-background: #FFFFFF;
-border: 1px solid #565251;
-box-sizing: border-box;
+    width: 246px;
+    height: 40px;
+    left: 597px;
+    top: 460px;
+    background: #FFFFFF;
+    border: 1px solid #565251;
+    box-sizing: border-box;
 }
 
 .rememberfield{
@@ -56,7 +54,6 @@ box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     width: 20vw;
-
 }
 
 .logbutton{
@@ -178,3 +175,130 @@ box-sizing: border-box;
     box-sizing: border-box;
 }
 
+//Sign up page CSS
+
+.arcade{
+    position: absolute;
+    width: 406px;
+    height: 546px;
+    left: 755px;
+    top: 105px;
+    background: url(arcade.jpg);
+    background-position: center;
+    border-radius: 120px;
+}
+
+.button{
+    position: absolute;
+    width: 186px;
+    height: 56px;
+    left: 221px;
+    top: 559px;
+    font-size: 30px;
+    font-family: Pacifico;
+    background: #02BDF0;
+    border-radius: 20px;
+  }
+
+  .signonimg{
+    position: absolute;
+    width: 222px;
+    height: 175px;
+    left: 203px;
+    top: 135px;
+    background: url(profile_icon.png);
+    border-radius: 122px;
+    background-position: center;
+  }
+
+  .signuptext{
+    position: absolute;
+    width: 186px;
+    height: 61px;
+    left: 183px;
+    top: 311px;
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: -0.333333px;
+    color: #000000;
+  }
+
+  .sutext{
+    position: absolute;
+    width: 198px;
+    height: 58px;
+    left: 307px;
+    top: 311px;
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: -0.333333px;
+    color: #565251;
+  }
+
+  .lastfield{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 319px;
+    top: 408px;
+    font-size: 30px;
+  }
+
+  .firstfield{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 109px;
+    top: 408px;
+    font-size: 30px;
+  }
+
+  .suemail{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 319px;
+    top: 458px;
+    font-size: 30px;
+  }
+
+  .pass{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 109px;
+    top: 458px;
+    font-size: 30px;
+  }
+
+  .cpass{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 210px;
+    top: 508px;
+    font-size: 30px; 
+  }
+
+  .gone{
+      display: none;
+  }
+
+  .border{
+    position: absolute;
+    width: 434px;
+    height: 524px;
+    left: 98px;
+    top: 116px;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 96px;
+    z-index: -2;
+  }
