@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'games/index'
+  get 'games/show'
   root "accounts#index"
   devise_for :users
 
